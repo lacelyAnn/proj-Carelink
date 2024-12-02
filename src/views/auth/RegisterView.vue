@@ -34,13 +34,32 @@ function onClick() {
                 <v-card-text class="bg-surface-light pt-4">
                   <v-form fast-fail @submit.prevent>
                     <v-text-field
+                      label="Full Name:"
+                      prepend-icon="mdi-account"
+                      variant="outlined"
+                    ></v-text-field>
+
+                    <v-text-field
                       label="ID-Number"
                       prepend-icon="mdi-card"
                       variant="outlined"
                     ></v-text-field>
 
                     <v-text-field
+                      label="Email"
+                      prepend-icon="mdi-email"
+                      variant="outlined"
+                    ></v-text-field>
+
+                    <v-text-field
                       label="Password:"
+                      type="password"
+                      prepend-icon="mdi-lock"
+                      variant="outlined"
+                    ></v-text-field>
+
+                    <v-text-field
+                      label="Confirm Password:"
                       type="password"
                       prepend-icon="mdi-lock"
                       variant="outlined"
@@ -53,7 +72,7 @@ function onClick() {
 
                   <h5 class="text-center">
                     Dont have account?
-                    <router-link class="text-primary" to="/register"
+                    <router-link class="text-primary" to="/login"
                       >Click here to register</router-link
                     >
                   </h5>
